@@ -170,7 +170,7 @@ var out = aadd( out, arr1, arr2 );
 ===
 ### Raw
 
-Lower-level APIs are provided which forgo some of the guarantees of the above APIs, such as input argument validation. While use of the above APIs are encouraged in REPL environments, use of the lower-level interfaces may be warranted when arguments are of a known type or when performance is paramount.
+Lower-level APIs are provided which forgo some of the guarantees of the above APIs, such as input argument validation. While use of the above APIs is encouraged in REPL environments, use of the lower-level interfaces may be warranted when arguments are of a known type or when performance is paramount.
 
 #### arrayfun.raw( fcn, ...array[, options] )
 
