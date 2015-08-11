@@ -54,7 +54,7 @@ describe( 'apply', function tests() {
 			true,
 			null,
 			undefined,
-			// function(){} // array-like
+			function(){} // array-like
 		];
 
 		for ( var i = 0; i < values.length; i++ ) {
@@ -127,7 +127,7 @@ describe( 'apply', function tests() {
 			true,
 			null,
 			undefined,
-			// function(){} // array-like
+			function(){} // array-like
 		];
 
 		for ( var i = 0; i < values.length; i++ ) {
