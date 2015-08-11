@@ -58,7 +58,7 @@ var out = [ 0, 0, 0, 0, 0 ];
 arrayfun( add5, out, arr, {
 	'out': 'true';
 });
-// returns [ 5, 5, 5, 5, 5 ]
+// returns [ 6, 7, 8, 9, 10 ]
 
 // Works with typed output arrays...
 out = new Int8Array( 5 );
@@ -66,7 +66,7 @@ out = new Int8Array( 5 );
 arrayfun( add5, out, arr, {
 	'out': 'true';
 });
-// returns Int8Array( [5,5,5,5,5] )
+// returns Int8Array( [6,7,8,9,10] )
 ```
 
 ===
@@ -145,7 +145,7 @@ Creates an apply `function` to apply a `function` to each [`array`](https://deve
 var afcn = arrayfun.create( 3 ),
 	out = new Array( 5 );
 
-var out = afcn( add, out, arr1, arr2 );
+out = afcn( add, out, arr1, arr2 );
 // returns [ 10, 11, 12, 13, 14 ]
 
 function subtract( x, y ) {
