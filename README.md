@@ -50,7 +50,7 @@ var out = arrayfun( add5, arr, {
 // return Int8Array( [6,7,8,9,10] )
 ```
 
-By default, the `function` returns a new [`array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array). To mutate a [`array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) (e.g., when input values can be discarded or when optimizing memory usage), set the `out` option to `true` to indicate that an output [`array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) has been provided as the __first__ [`array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) argument.
+By default, the `function` returns a new [`array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array). To mutate an [`array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) (e.g., when input values can be discarded or when optimizing memory usage), set the `out` option to `true` to indicate that an output [`array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) has been provided as the __first__ [`array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) argument.
 
 ``` javascript
 var out = [ 0, 0, 0, 0, 0 ];
@@ -112,7 +112,7 @@ var out = aadd( arr1, arr2 );
 
 The function accepts the following `options`:
 
-*	__dtype__: output data type. Default: `float64`.
+*	__dtype__: output data type. Default: `generic`.
 
 By default, the output [`array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) is a `generic` array. To specify a different data type, set the `dtype` option.
 
@@ -125,7 +125,7 @@ var out = aadd( arr1, arr2 );
 // returns Int32Array( [10,11,12,13,14] )
 
 // ...and for all subsequent calls...
-out = madd( arr1, arr2 );
+out = aadd( arr1, arr2 );
 // returns Int32Array( [10,11,12,13,14] )
 ```
 
