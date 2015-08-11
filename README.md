@@ -142,7 +142,8 @@ To facilitate using [`array`](https://developer.mozilla.org/en-US/docs/Web/JavaS
 Creates an apply `function` to apply a `function` to each [`array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) element, where `num` is the number of input [`arrays`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) __including__ the output [`array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array).
 
 ``` javascript
-var afcn = arrayfun.create( 3 );
+var afcn = arrayfun.create( 3 ),
+	out = new Array( 5 );
 
 var out = afcn( add, out, arr1, arr2 );
 // returns [ 10, 11, 12, 13, 14 ]

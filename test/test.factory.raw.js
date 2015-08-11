@@ -216,7 +216,7 @@ describe( 'apply factory (raw)', function tests() {
 		assert.deepEqual( out, [3,3,3,3] );
 	});
 
-	it( 'should apply a function and return a array having a specified type', function test() {
+	it( 'should apply a function and return an array having a specified type', function test() {
 		var apply,
 			arr,
 			out;
