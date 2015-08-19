@@ -23,7 +23,7 @@ var arrayfun = require( 'compute-array-function' );
 <a name="arrayfun"></a>
 #### arrayfun( fcn, ...array[, options] )
 
-Applies a `function` to each [`array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) element.
+Applies a `function` to each [`array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) element. Array arguments may be either generic [`arrays`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) or [`typed arrays`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays).
 
 ``` javascript
 var arr = [ 1, 2, 3, 4, 5 ];
@@ -203,7 +203,6 @@ The function accepts the same `options` as [`arrayfun.factory()`](#arrayfun-fact
 
 ## Notes
 
-*	All methods accept [`typed arrays`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays) as both input and output arguments.
 *	Both factory methods, as well as the `.create()` method, use dynamic code evaluation. Beware when using these methods in the browser as they may violate your [content security policy](https://developer.mozilla.org/en-US/docs/Web/Security/CSP) (CSP). 
 
 
