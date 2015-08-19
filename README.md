@@ -23,7 +23,7 @@ var arrayfun = require( 'compute-array-function' );
 <a name="arrayfun"></a>
 #### arrayfun( fcn, ...array[, options] )
 
-Applies a `function` to each [`array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) element. Array arguments may be either generic [`arrays`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) or [`typed arrays`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays).
+Applies a `function` to each [`array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) element. Array arguments may be either generic [`arrays`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array), [`typed arrays`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays), or a mixture of both.
 
 ``` javascript
 var arr = [ 1, 2, 3, 4, 5 ];
