@@ -191,6 +191,40 @@ describe( 'apply', function tests() {
 		assert.deepEqual( out, [3,3,3,3] );
 	});
 
+	it( 'should apply a function to a single typed array', function test() {
+		var arr,
+			out;
+
+		arr = new Int8Array( [1,1,1,1] );
+
+		out = apply( add1, arr );
+		assert.deepEqual( out, [2,2,2,2] );
+	});
+
+	it( 'should apply a function to multiple typed arrays', function test() {
+		var arr1,
+			arr2,
+			out;
+
+		arr1 = new Uint8Array( [1,1,1,1] );
+		arr2 = new Int16Array( [2,2,2,2] );
+
+		out = apply( add, arr1, arr2 );
+		assert.deepEqual( out, [3,3,3,3] );
+	});
+
+	it( 'should apply a function to a mixture of typed and generic arrays', function test() {
+		var arr1,
+			arr2,
+			out;
+
+		arr1 = new Uint8Array( [1,1,1,1] );
+		arr2 = [2,2,2,2];
+
+		out = apply( add, arr1, arr2 );
+		assert.deepEqual( out, [3,3,3,3] );
+	});
+
 	it( 'should apply a function and return an array having a specified type', function test() {
 		var arr,
 			out;

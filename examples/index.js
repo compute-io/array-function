@@ -12,7 +12,7 @@ for ( i = 0; i < arr1.length; i++ ) {
 	arr1[ i ] = i;
 }
 
-arr2 = new Array( 25 );
+arr2 = new Int32Array( 25 );
 for ( i = 0; i < arr2.length; i++ ) {
 	arr2[ i ] = 5;
 }

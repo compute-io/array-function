@@ -60,7 +60,7 @@ arrayfun( add5, out, arr, {
 });
 // returns [ 6, 7, 8, 9, 10 ]
 
-// Works with typed output arrays...
+// Works with typed output arrays, as well...
 out = new Int8Array( 5 );
 
 arrayfun( add5, out, arr, {
@@ -203,6 +203,7 @@ The function accepts the same `options` as [`arrayfun.factory()`](#arrayfun-fact
 
 ## Notes
 
+*	All methods accept [`typed arrays`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays) as both input and output arguments.
 *	Both factory methods, as well as the `.create()` method, use dynamic code evaluation. Beware when using these methods in the browser as they may violate your [content security policy](https://developer.mozilla.org/en-US/docs/Web/Security/CSP) (CSP). 
 
 
@@ -222,7 +223,7 @@ for ( i = 0; i < arr1.length; i++ ) {
 	arr1[ i ] = i;
 }
 
-arr2 = new Array( 25 );
+arr2 = new Int32Array( 25 );
 for ( i = 0; i < arr2.length; i++ ) {
 	arr2[ i ] = 5;
 }

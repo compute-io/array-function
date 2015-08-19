@@ -30,6 +30,8 @@
     "util",
     "utils",
     "array",
+    "typed",
+    "typed-array",
     "element-wise",
     "apply",
     "function"
